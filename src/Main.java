@@ -75,7 +75,7 @@ public class Main {
         System.out.println("    Циклы ч2. ДЗ-2. Задача 2");
         {
             int AmountOfSavings = 15000;
-            int i =0;
+            int i =1;
             while ( AmountOfSavings <= 12_000_000)
             {  i++;
                 AmountOfSavings = AmountOfSavings + AmountOfSavings / 100 * 7;
@@ -90,7 +90,7 @@ public class Main {
         System.out.println("    Циклы ч2. ДЗ-2. Задача 3"); {
             int AmountOfSavings = 15000;
             int nineYears = 12 * 9;
-            int i =0;
+            int i =1;
             while (i <= nineYears) {
                 i++;
                 AmountOfSavings = AmountOfSavings + AmountOfSavings / 100 * 7;
@@ -103,7 +103,6 @@ public class Main {
 
         //Задание 4.
         System.out.println("    Циклы ч2. ДЗ-2. Задача 4"); {
-
             for (int Friday = 1; Friday < 31; Friday = Friday + 7) {
                                                 System.out.println( "Cегодня пятница " + Friday + "-е число. Необходимо подготовить отчёт!");
             }
