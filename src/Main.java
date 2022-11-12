@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println();
+        System.out.println( );
         //ДЗ-1.
         //Задание 1.
         {
@@ -56,17 +56,16 @@ public class Main {
 
         // ДЗ-2.
         //Задание 1.
-        System.out.println("    Циклы ч2. ДЗ-2. Задача 1");
-        {
-            int i = 0;
+        System.out.println("    Циклы ч2. ДЗ-2. Задача 1"); {
+                    int month = 0;
             for (int AmountOfSavings = 15000; AmountOfSavings <= 12_500_000; AmountOfSavings = AmountOfSavings + AmountOfSavings / 100 * 7) {
-                i++;
+                month++;
                 if (AmountOfSavings == 15000) {
-                    System.out.println("Месяц " + i + "-й, положили на счёт " + AmountOfSavings + " рублей, ждём..."); }
+                    System.out.println("Месяц " + month + "-й, положили на счёт " + AmountOfSavings + " рублей, ждём..."); }
                     else if (AmountOfSavings < 12_000_000){
-                System.out.println("Месяц " + i + "-й, на счету уже " + AmountOfSavings + " рублей!"); }
+                System.out.println("Месяц " + month + "-й, на счету уже " + AmountOfSavings + " рублей!"); }
                     else {
-                    System.out.println("Месяц " + i + "-й! Цель достигнута! На счету " + AmountOfSavings + " рублей!");}
+                    System.out.println("Месяц " + month + "-й! Цель достигнута! На счету " + AmountOfSavings + " рублей!");}
             }
         }
         System.out.println( );
@@ -75,29 +74,27 @@ public class Main {
         System.out.println("    Циклы ч2. ДЗ-2. Задача 2");
         {
             int AmountOfSavings = 15000;
-            int i =1;
+            int month =1;
             while ( AmountOfSavings <= 12_000_000)
-            {  i++;
+            {  month++;
                 AmountOfSavings = AmountOfSavings + AmountOfSavings / 100 * 7;
-                if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " сумма накоплений равна " + AmountOfSavings + " рублей");
+                if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " сумма накоплений равна " + AmountOfSavings + " рублей");
+                                    }
             }
-
         }
-            System.out.println( );
-        }
+        System.out.println( );
         // Задание 3.
         System.out.println("    Циклы ч2. ДЗ-2. Задача 3"); {
             int AmountOfSavings = 15000;
             int nineYears = 12 * 9;
-            int i =1;
-            while (i <= nineYears) {
-                i++;
+            int month    =1;
+            while (month <= nineYears) {
+                month++;
                 AmountOfSavings = AmountOfSavings + AmountOfSavings / 100 * 7;
-                if (i % 6 == 0) {
-                    System.out.println("Месяц " + i + " сумма накоплений равна " + AmountOfSavings + " рублей");
-                }
-            }
+                if (month % 6 == 0)
+                    System.out.println("Месяц " + month + " сумма накоплений равна " + AmountOfSavings + " рублей");
+                            }
         }
         System.out.println( );
 
@@ -120,7 +117,20 @@ public class Main {
                     System.out.println(appearanceOfComet);
                 }
             }
+            System.out.println( );
         }
-
+        // Задание 2.
+        System.out.println("    Циклы ч2. ДЗ-3. Задача 2");{
+            int a = 2;
+            int b = 0;
+            int c = 0;
+            while (b <10) {
+                b++;
+                c = c + 2;
+                System.out.println(a + "*" + b + "=" + c );
+            }
+        }
+        System.out.println( );
+        System.out.println("    Конец урока. Всем спасибо за внимание.");
     }
 }
