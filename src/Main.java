@@ -107,8 +107,20 @@ public class Main {
                                                 System.out.println( "Cегодня пятница " + Friday + "-е число. Необходимо подготовить отчёт!");
             }
         }
+        System.out.println( );
 
-
+        //ДЗ 4.
+        //Задание 1.
+        System.out.println("    Циклы ч2. ДЗ-3. Задача 1");
+        {
+            int appearanceOfComet = 0;
+            while (appearanceOfComet <= 2100) {
+                appearanceOfComet = appearanceOfComet + 79;
+                if (appearanceOfComet > 1822 && appearanceOfComet < 2122) {
+                    System.out.println(appearanceOfComet);
+                }
+            }
+        }
 
     }
 }
